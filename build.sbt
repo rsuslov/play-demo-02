@@ -1,3 +1,5 @@
+import NativePackagerHelper._
+
 name := "example-app"
 
 version := "1.0-SNAPSHOT"
