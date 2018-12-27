@@ -9,3 +9,9 @@ libraryDependencies ++= Seq(
 )     
 
 play.Project.playJavaSettings
+
+enablePlugins(DebianPlugin)
+maintainer := "Roman <roman.suslov.18@gmail.com>"
+packageSummary := "My custom package"
+packageDescription := "Package-01"
+
