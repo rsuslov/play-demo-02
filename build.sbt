@@ -1,5 +1,3 @@
-import NativePackagerHelper._
-
 name := "example-app"
 
 version := "1.0-SNAPSHOT"
@@ -10,6 +8,7 @@ libraryDependencies ++= Seq(
   cache
 )     
 
+debianPackageDependencies := Seq("openjdk-8-jre-headless")
 
 play.Project.playJavaSettings
 
