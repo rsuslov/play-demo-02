@@ -1,24 +1,25 @@
 name := """example-app"""
 
-version := "1.0"
+version := "1.0-SNAPSHOT"
 
-//lazy val root = (project in file("."))
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
+
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
   javaJdbc,
-  javaEbean,
-  cache
-)     
+  cache,
+  javaWs
+)
 
-play.Project.playJavaSettings
+// Play provides two styles of routers, one expects its actions to be injected, the
+// other, legacy style, accesses its actions statically.
+routesGenerator := InjectedRoutesGenerator
 
-//enablePlugins(LinuxPlugin)
+enablePlugins(DebianPlugin)
 
-//enablePlugins(DebianPlugin)
-
-maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
+maintainer := "Edward Viaene <ward@in4it.io>"
 
 packageSummary := "My custom package"
 
-packageDescription := """A fun package description of our software,
-  with multiple lines."""
+packageDescription := "Package"
