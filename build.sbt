@@ -9,7 +9,7 @@ packageSummary := "My custom package"
 packageDescription := """A fun package description of our software,
   with multiple lines."""
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+lazy val root = (project in file("."))
 
 libraryDependencies ++= Seq(
   javaJdbc,
@@ -21,4 +21,4 @@ play.Project.playJavaSettings
 
 enablePlugins(LinuxPlugin)
 
-enablePlugins(DebianPlugin)
+//enablePlugins(DebianPlugin)
