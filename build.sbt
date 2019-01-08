@@ -1,6 +1,6 @@
 name := "example-app"
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 libraryDependencies ++= Seq(
   javaJdbc,
@@ -8,10 +8,9 @@ libraryDependencies ++= Seq(
   cache
 )     
 
-debianPackageDependencies := Seq("openjdk-8-jre-headless")
-
 play.Project.playJavaSettings
 
+enablePlugins(LinuxPlugin)
 enablePlugins(DebianPlugin)
 
 maintainer := "Roman <roman.suslov.18@gmail.com>"
