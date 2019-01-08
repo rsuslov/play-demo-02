@@ -14,7 +14,7 @@ play.Project.playJavaSettings
 
 enablePlugins(LinuxPlugin)
 
-enablePlugins(DebianPlugin)
+//enablePlugins(DebianPlugin)
 
 maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
 
