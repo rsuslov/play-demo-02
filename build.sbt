@@ -8,4 +8,12 @@ libraryDependencies ++= Seq(
   cache
 )     
 
-play.Project.playJavaSettings
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
+
+maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
+
+packageSummary := "My custom package"
+
+packageDescription := """A fun package description of our software"""
+
+//play.Project.playJavaSettings
