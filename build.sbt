@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
 
 play.Project.playJavaSettings
 
-//enablePlugins(LinuxPlugin)
+enablePlugins(LinuxPlugin)
 
 enablePlugins(DebianPlugin)
 
