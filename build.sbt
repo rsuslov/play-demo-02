@@ -2,11 +2,12 @@ name := "example-app"
 
 version := "1.0"
 
-maintainer := "Roman <roman.suslov.18@gmail.com>"
+maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
 
 packageSummary := "My custom package"
 
-packageDescription := "Package-01"
+packageDescription := """A fun package description of our software,
+  with multiple lines."""
 
 libraryDependencies ++= Seq(
   javaJdbc,
