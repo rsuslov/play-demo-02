@@ -1,15 +1,8 @@
-name := "example-app"
+name := """example-app"""
 
 version := "1.0"
 
-maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
-
-packageSummary := "My custom package"
-
-packageDescription := """A fun package description of our software,
-  with multiple lines."""
-
-lazy val root = (project in file("."))
+//lazy val root = (project in file("."))
 
 libraryDependencies ++= Seq(
   javaJdbc,
@@ -19,6 +12,13 @@ libraryDependencies ++= Seq(
 
 play.Project.playJavaSettings
 
-enablePlugins(LinuxPlugin)
+//enablePlugins(LinuxPlugin)
 
-//enablePlugins(DebianPlugin)
+enablePlugins(DebianPlugin)
+
+maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
+
+packageSummary := "My custom package"
+
+packageDescription := """A fun package description of our software,
+  with multiple lines."""
