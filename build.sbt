@@ -8,7 +8,7 @@ version := "1.0-SNAPSHOT"
 //  cache
 //)     
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+lazy val root = (project in file(".")) //.enablePlugins(PlayJava)
 
 //enablePlugins(PlayJava)
 
