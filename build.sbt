@@ -2,11 +2,14 @@ name := "example-app"
 
 version := "1.0-SNAPSHOT"
 
-libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache
-)     
+organization := "com.example"
+
+
+//libraryDependencies ++= Seq(
+//  javaJdbc,
+// javaEbean,
+//  cache
+//)     
 
 //lazy val root = (project in file(".")) //.enablePlugins(PlayJava)
 
@@ -20,4 +23,9 @@ packageSummary := "My custom package"
 
 packageDescription := """A fun package description of our software"""
 
-play.Project.playJavaSettings
+//play.Project.playJavaSettings
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "example-app"
+  )
