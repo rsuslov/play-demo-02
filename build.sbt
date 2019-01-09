@@ -10,7 +10,7 @@ version := "1.0-SNAPSHOT"
 
 //lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
-enablePlugins(PlayJava)
+//enablePlugins(PlayJava)
 
 enablePlugins(DebianPlugin)
 
