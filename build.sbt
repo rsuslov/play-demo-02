@@ -2,13 +2,13 @@ name := "example-app"
 
 version := "1.0-SNAPSHOT"
 
-//libraryDependencies ++= Seq(
-//  javaJdbc,
-//  javaEbean,
-//  cache
-//)     
+libraryDependencies ++= Seq(
+  javaJdbc,
+  javaEbean,
+  cache
+)     
 
-lazy val root = (project in file(".")) //.enablePlugins(PlayJava)
+//lazy val root = (project in file(".")) //.enablePlugins(PlayJava)
 
 //enablePlugins(PlayJava)
 
