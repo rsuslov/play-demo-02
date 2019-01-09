@@ -13,8 +13,6 @@ organization := "com.example"
 
 //lazy val root = (project in file(".")) //.enablePlugins(PlayJava)
 
-//enablePlugins(PlayJava)
-
 enablePlugins(DebianPlugin)
 
 maintainer := "Roman Suslov <roman.suslov.18@gmail.com>"
